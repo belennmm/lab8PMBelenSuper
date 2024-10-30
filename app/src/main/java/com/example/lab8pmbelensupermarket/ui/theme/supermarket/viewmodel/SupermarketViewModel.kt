@@ -32,7 +32,7 @@ class SupermarketViewModel(private val dao: SupermarketItemDao) : ViewModel() {
 
     private fun loadItems() {
         viewModelScope.launch(Dispatchers.IO) {
-            val items = dao.getAllItems<Any?>()
+            val items = dao.getAllItems()
             supermarketItems.value = items
         }
     }

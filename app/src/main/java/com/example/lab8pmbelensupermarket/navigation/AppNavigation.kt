@@ -4,8 +4,12 @@ import CategoriesScreen
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.platform.LocalContext
 import androidx.navigation.compose.NavHost
+import androidx.navigation.compose.composable
 import androidx.navigation.compose.rememberNavController
-
+import com.example.lab8pmbelensupermarket.ui.theme.supermarket.view.SupermarketScreen
+import com.uvg.laboratorio8supermarket.ui.supermarket.view.AddSupermarketItemScreen
+import com.uvg.laboratorio8supermarket.ui.supermarket.view.SupermarketItemListScreen
+import com.uvg.laboratorio8supermarket.ui.supermarket.viewmodel.SupermarketViewModel
 
 @Composable
 fun AppNavigation(viewModel: SupermarketViewModel) {

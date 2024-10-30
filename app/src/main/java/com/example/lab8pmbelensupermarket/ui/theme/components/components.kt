@@ -40,21 +40,6 @@ fun Texto(texto: String){
     )
 }
 
-@Composable
-fun TextoDescripcion(texto: String){
-
-    Text(
-        text = texto,
-        modifier = Modifier
-            .fillMaxWidth()
-            .padding(15.dp),
-        fontSize = 15.sp,
-        color = Color(0xFF00796B),
-        fontStyle = FontStyle.Normal,
-        lineHeight = 17.sp,
-        overflow = TextOverflow.Ellipsis
-    )
-}
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable

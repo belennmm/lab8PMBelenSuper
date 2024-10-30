@@ -20,10 +20,10 @@ interface SupermarketItemDao {
 
 
     @Delete
-    suspend fun <SupermarketItem> deleteItem(item: SupermarketItem) // eliminación
+    suspend fun deleteItem(item: SupermarketItem) // eliminación
 
     @Query("SELECT * FROM supermarket_items")
-    suspend fun <SupermarketItem> getAllItems(): List<SupermarketItem> // de la dataBase
+    suspend fun getAllItems(): List<SupermarketItem> // de la dataBase
 
 
     @Query("SELECT * FROM supermarket_items WHERE id = :itemId")
