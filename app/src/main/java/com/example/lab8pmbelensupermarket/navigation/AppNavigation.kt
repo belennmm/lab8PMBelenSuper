@@ -7,11 +7,6 @@ import androidx.navigation.compose.NavHost
 import androidx.navigation.compose.rememberNavController
 
 
-import com.uvg.laboratorio8supermarket.ui.supermarket.view.AddSupermarketItemScreen
-import com.uvg.laboratorio8supermarket.ui.supermarket.view.SupermarketItemListScreen
-import com.uvg.laboratorio8supermarket.ui.supermarket.view.SupermarketScreen
-import com.uvg.laboratorio8supermarket.ui.supermarket.viewmodel.SupermarketViewModel
-
 @Composable
 fun AppNavigation(viewModel: SupermarketViewModel) {
     val navController = rememberNavController()
